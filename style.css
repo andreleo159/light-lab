@@ -26,7 +26,6 @@ header{
 
 }
 
-cabecalho-lista-item{
-    width: 120px;
-    position: relative;
+cabecalho-lista-item>Produtos{
+    position:relative;
 }
