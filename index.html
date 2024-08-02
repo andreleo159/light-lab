@@ -1,24 +1,134 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light Labs</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Light Lab - Loja de Suplementos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background: #fff;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .product {
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="logotipo" src="Texto do se.png" alt="Logotipo light lab">
-        <h1> Sua força, nossa missão</h1>
-        <ul class="cabecalho-lista">
-            <li class="cabecalho-lista-item">Produtos</li>
-            <li class="cabecalho-lista-item">Contato</li>
-        </ul>
+    <header>
+        <h1>Light Lab</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <div id="home" class="main">
+        <div class="container">
+            <h2>Bem-vindo à Light Lab</h2>
+            <p>Encontre os melhores suplementos para potencializar sua saúde e desempenho.</p>
+        </div>
+    </div>
 
+    <div id="products" class="container">
+        <h2>Nossos Produtos</h2>
+        <div class="products">
+            <div class="product">
+                <img src="produto1.jpg" alt="Produto 1">
+                <h3>Suplemento A</h3>
+                <p>Descrição do Suplemento A.</p>
+                <p>R$ 99,99</p>
+            </div>
+            <div class="product">
+                <img src="produto2.jpg" alt="Produto 2">
+                <h3>Suplemento B</h3>
+                <p>Descrição do Suplemento B.</p>
+                <p>R$ 89,99</p>
+            </div>
+            <div class="product">
+                <img src="produto3.jpg" alt="Produto 3">
+                <h3>Suplemento C</h3>
+                <p>Descrição do Suplemento C.</p>
+                <p>R$ 109,99</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="main">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Para mais informações, entre em contato conosco:</p>
+            <p>Email: contato@lightlab.com.br</p>
+            <p>Telefone: (11) 1234-5678</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Light Lab. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
-
-
