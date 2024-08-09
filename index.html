@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,13 +16,29 @@
             color: #fff;
             padding: 1rem;
             text-align: center;
+            position: relative; /* Para posicionar o logotipo corretamente */
+        }
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-content h1 {
+            margin: 0;
+        }
+        .logotipo {
+            max-width: 150px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
+            margin: 1rem 0; /* Espaçamento em torno do logotipo */
         }
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
         nav ul li {
-            display: inline;
             margin: 0 1rem;
         }
         nav ul li a {
@@ -77,15 +92,17 @@
 </head>
 <body>
     <header>
-        <h1>Light Lab</h1>
-        <img class=logotipo src="Texto do se.png" alt="Logotipo">
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#products">Produtos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>Light Lab</h1>
+            <img class="logotipo" src="Texto do se.png" alt="Logotipo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div id="home" class="main">
         <div class="container">
@@ -97,22 +114,27 @@
         <h2>Nossos Produtos</h2>
         <div class="products">
             <div class="product">
-                <img src="produto1.jpg" alt="Produto 1">
                 <img src="Drawing.sketchpad.png" alt="Produto 1">
                 <h3>Creatina Diabo Verde</h3>
                 <p>Creatina adicionado com pré-treino a base de cianeto.</p>
                 <p>R$ 299,99</p>
             </div>
             <div class="product">
-                <img src="produto2.jpg" alt="Produto 2">
                 <img src="wuei-light-lab.jpg" alt="Produto 2">
                 <h3>Wuei</h3>
                 <p>1 Quilo de Wuei feito do soro do leite de boi, 30 gramas de proteina por porção</p>
                 <p>R$ 89,99</p>
             </div>
             <div class="product">
-                <img src="produto3.jpg" alt="Produto 3">
                 <img src="Trembolona.jpg" alt="Produto 3">
                 <h3>Trembolona</h3>
                 <p>Esteroide anabolizante para o seu "cavalo" ficar bem fortão</p>
                 <p>R$ 309,99</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Light Lab. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
